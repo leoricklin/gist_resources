@@ -15,7 +15,22 @@ graph TD;
 docker exec -it allspark bash
 ```
 
-##### [Structurizr](https://structurizr.com/share/76352/documentation)
+##### [Structurizr On-Premises](https://docs.structurizr.com/onpremises/installation)
+
+```
+docker pull structurizr/onpremises
+```
+
+```
+docker run -it --rm \
+ -p 8881:8080 \
+ -v ${DOCPATH}:/usr/local/structurizr \
+ --name "onprem"
+ structurizr/onpremises
+```
+
+
+##### [Structurizr Lite](https://structurizr.com/share/76352/documentation)
 
 ```
 #
