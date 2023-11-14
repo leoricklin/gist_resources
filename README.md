@@ -33,18 +33,18 @@ docker run -it --rm \
 ##### [Structurizr Lite](https://structurizr.com/share/76352/documentation)
 
 ```
-#
 docker pull structurizr/lite
+```
 
-#
-cd XXX;
+```
+cd $REPO;
 
-#
 export DOCPATH=`pwd`; ls $DOCPATH; \
 echo "Press any key to continue"; read; \
 history |grep -E "structur|my-apache";
+```
 
-#
+```
 docker run -dit --rm \
  -p 8891:8080 \
  -v ${DOCPATH}:/usr/local/structurizr \
